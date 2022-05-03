@@ -1,103 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
+
     <meta charset="UTF-8">
-    <title>Survey Form</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-  </head>
+    <title>Survey Form</title>
 
-  <body>
-    
+</head>
+
+<body>
     <div id="container-main">
-      <header>
-          <h1 id="title"> Music Survey</h1>
-          <p id="description"> To get insight on the music test of respondants </p>
-          
-      </header>
-      <main>
-          <form id="survey-form" method="post" action="">
-              <div id="form-wrapper">
-                  <div>
-                      <label id="name-label"for="name">Enter your full name:</label>
-                      <input id="name" type="text" placeholder="full name" size="25" required>
-                  </div>
-                  <div>
-                      <label id="email-label"for="email">Enter your email:</label>
-                      <input id="email" type="email" placeholder="email" size="25" required>
-                  </div>
-                  <div>
-                      <label id="number-label" for="number">Enter your age:</label>
-                      <input id = "number " placeholder= "age" type = "number" name="number" min="2" max="100">
-                  </div>
-                  
-                  <fieldset>
-                      <legend>Select your favorite types of music:</legend>
-                      <div>
-                          <input type="checkbox" name="Pop" value="pop" id="pop">
-                          <label for="pop">Pop</label>
-                      </div>
-                      <div>
-                          <input type="checkbox" name="classical" id="classical" value="pop">
-                          <label for="pop">Classical</label>
-                      </div>
-                      <div>
-                          <input type="checkbox" name="rock" id="rock" value="pop">
-                          <label for="pop">Rock</label>
-                      </div>
-                      <div>
-                          <input type="checkbox" name="rap" id="rap" value="pop">
-                          <label for="rap">RAp</label>
-                      </div>
-                      <div>
-                          <input type="checkbox" name="other" id="other" value="pop">
-                          <label for="pop">Other</label>
-                      </div>
-                  </fieldset>
-  
-                  <div>
-                      <label for="dropdown">Select the locations you want to listen music:</label>
-                  </div>
-  
-                  <select id="dropdown">
-                      <option value="home">At home</option>
-                      <option value="car">In the car</option>
-                      <option value="anyWhere">Any where (mp3 player) </option>
-                  </select>
-              </div>
-                  <fieldset>
-                      <legend>Select how often you purchase music CD:</legend>
-                        <div>
-                          <input type="radio" name="cdPurchasing" id="weekly" value="weekly">
-                          <label for="txt">Weekly</label>
-                        </div>
-                        <div>
-                          <input type="radio" name="cdPurchasing" id="fewPerYear" value="fewPerYear" checked>
-                          <label for="csv">A few CDs each year</label>
-                        </div>
-                        <div>
-                          <input type="radio" name="cdPurchasing" id="monthly" value="monthly">
-                          <label for="csv">Monthly</label>
-                        </div>
-                        <div>
-                          <input type="radio" name="cdPurchasing" id="never" value="never">
-                          <label for="csv">Never purched CD</label>
-                        </div>
-                  </fieldset>
-                  
-                  <div>
-                      <p id="texta">What role does music play in your life?</p>
-                      <textarea id="music-role" cols="50%" rows="6"></textarea>
-                  </div>
-                  <div id="submit-button">
-                      <input id="submit" type="submit" style="margin-bottom: 30px; font: 'Comic Sans MS'; font-size: larger; color: teal; background-color: #FFFFC0; border: 3pt ridge lightgrey" value=" Submit ! ">
-                      <p></p>
-                  </div>
-          </form>
-      </div>
-      </main>
+    <header>
+        <h1 id="title">Music Survey</h1>
+        <p id="description"> To get insight on the music test of respondants </p>
+        
+    </header>
+    <main>
+        <form id="survey-form" method="post" action="">
+            <div id="form-wrapper">
+                <div>
+                    <label id="name-label"for="name">Enter your full name:</label>
+                    <input id="name" type="text" placeholder="Enter Your Full Name" size="25" required>
+                </div>
+                <div>
+                    <label id="email-label"for="email">Enter your email:</label>
+                    <input id="email" type="email" placeholder="Enter your email address" size="25" required>
+                </div>
+                <div>
+                    <label id="number-label" for="number">Enter your age:</label>
+                    <input id = "number" placeholder= "How old are you?" type ="number" name="number" min="2" max="100">
+                </div>
+                
+                <fieldset>
+                    <legend>Select your favorite types of music:</legend>
+                    <div>
+                        <input type="checkbox" name="Pop" value="pop" id="pop">
+                        <label for="pop">Pop</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="classical" id="classical" value="pop">
+                        <label for="pop">Classical</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="rock" id="rock" value="pop">
+                        <label for="pop">Rock</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="rap" id="rap" value="pop">
+                        <label for="rap">RAp</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="other" id="other" value="pop">
+                        <label for="pop">Other</label>
+                    </div>
+                </fieldset>
 
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+                <div>
+                    <label for="dropdown">Select the locations you want to listen music:</label>
+                </div>
 
-    <script  src="js/index.js"></script>
-  </body>
+                <select id="dropdown">
+                    <option value="home">At home</option>
+                    <option value="car">In the car</option>
+                    <option value="anyWhere">Any where (mp3 player) </option>
+                </select>
+            </div>
+                <fieldset>
+                    <legend>Select how often you purchase music CD:</legend>
+                        <div>
+                        <input type="radio" name="cdPurchasing" id="weekly" value="weekly">
+                        <label for="txt">Weekly</label>
+                        </div>
+                        <div>
+                        <input type="radio" name="cdPurchasing" id="fewPerYear" value="fewPerYear" checked>
+                        <label for="csv">A few CDs each year</label>
+                        </div>
+                        <div>
+                        <input type="radio" name="cdPurchasing" id="monthly" value="monthly">
+                        <label for="csv">Monthly</label>
+                        </div>
+                        <div>
+                        <input type="radio" name="cdPurchasing" id="never" value="never">
+                        <label for="csv">Never purched CD</label>
+                        </div>
+                </fieldset>
+                
+                <div>
+                    <p id="texta">What role does music play in your life?</p>
+                    <textarea id="music-role" cols="50%" rows="6"></textarea>
+                </div>
+                <div id="submit-button">
+                    <input id="submit" type="submit"  value=" Submit!">
+                    <p></p>
+                </div>
+        </form>
+    </div>
+    </main>
+
+    <script src="js/index.js"></script>
+</body>
 </html>
